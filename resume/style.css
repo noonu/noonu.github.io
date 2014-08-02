@@ -1,0 +1,133 @@
+/* reset */
+
+html, body, div, span, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, address, cite, code, em, img,  sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header,  menu, nav, section {
+	margin: 0; padding: 0;
+}
+
+
+ol,ul{
+	list-style: none; 
+}
+
+
+
+/* 通用类 */
+
+.clear {zoom: 1; }
+.clear:after {content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+/* 主体框架 */
+
+html {width: 100%; height: 100%; }
+body {width: 100%; height: 100%; background: url(images/textura.png) repeat; text-align: center; font-size: 14px; font-family: Calibri, times, Arial, sans-serif; color: #fff; }
+a {text-decoration: none; color: #fff; }
+
+#wrapper {display: none; width: 980px; margin: 0 auto; text-align: left; }
+.main {position: absolute; top: -600px; margin-bottom: 20px; overflow: hidden; }
+.title {float: left; background: url(images/title-sprite.png) no-repeat; cursor: pointer; }
+ 
+
+
+/* welcome */
+
+#welcome {background-color: #8AD; width: 100%; height: 100%; }
+#welcome h1 {position: absolute; left: 50%; top: 50%; margin-left: -280px; margin-top: -100px; width: 560px; color: #fff; font-size: 70px; font-family:"Microsoft YaHei", Georgia, Geneva, times; font-weight: normal; letter-spacing: 5px; text-shadow: 0 2px 2px rgba(0,0,0,.25); }
+#welcome p {position: absolute; left: 50%; top: 50%; width: 54px; height: 10px; margin-left: -27px; background: url(images/loading.gif) no-repeat; text-indent: -9999px; }
+
+.header h2 a {display: block-inline; padding: 15px 5px 6px 5px; font-size: 36px; font-weight: bold;}
+.header h3 {color: #BBB; font-size: 15px; padding-left: 5px; }
+
+
+#profile {background: #F90; }
+#profile .title {background-position: 0 0; }
+
+#skills {background: #d46a15; }
+#skills .title {background-position: -50px 0; }
+
+#experience {background: #bf4c24; }
+#experience .title {background-position: -100px 0; }
+
+#works {background: #789b2e; }
+#works .title {background-position: -150px 0; }
+
+#contact {background: #26adf5; }
+#contact .title {background-position: -200px 0; }
+
+
+.footer p {color: #BBB; padding-bottom: 10px; padding-left: 5px; font-weight: bold;}
+.footer .footer-author {margin-left: 8px; }
+
+/* 简介 */
+
+.about-me h2 {font-size: 20px; padding: 10px 20px 4px; }
+.about-me p {padding: 10px; text-indent: 2em; line-height: 21px }
+
+.personal-info a {display: block; padding: 1px; border-bottom: 1px dashed #FFF; }
+.personal-info h2 {font-size: 20px; padding: 10px; }
+.personal-info ul {width: 500px; padding: 10px; }
+.personal-info ul li {width: 500px; margin-bottom: 8px; overflow: hidden; border-bottom: 1px dashed #DDD;}
+.personal-info ul label {float: left; width: 100px; height: 24px; padding-right: 16px; padding-left: 8px; background: #FCA; color: #888; font-size: 15px; font-weight: 600; line-height: 24px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.personal-info ul span {float: right; padding: 4px; }
+
+
+/* 技能 */
+
+.skill {float: left; display: inline; margin: 40px 10px 40px 30px; }
+.skill .skill-title {display: block; padding: 5px; font-size: 18px; font-weight: bold; }
+.skill ul {width: 310px; }
+.skill ul li {width: 90px; height: 26px; margin-bottom: 10px; padding: 0 8px; background: #fff; color: #888; font-weight: 600; line-height: 26px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-transition: width .2s ease-in-out;
+	-moz-transition: width .2s ease-in-out;
+	-o-transition: width .2s ease-in-out;
+	transition: width .2s ease-in-out;
+}
+.skill ul li:hover {
+	width: 140px;
+}
+.skill ul li span {cursor: default; }
+
+#skill-html {padding-right: 170px; }
+#skill-css {padding-right: 170px; }
+#skill-jquery {padding-right: 130px; }
+#skill-ajax {padding-right: 130px; }
+#skill-dom {padding-right: 70px; }
+#skill-php {padding-right: 90px; }
+#skill-sql {padding-right: 50px; }
+#skill-c {padding-right: 90px; }
+#skill-ps {padding-right: 70px; }
+#skill-seo {padding-right: 70px; }
+
+
+/* 经历 */
+
+.experience {margin-bottom: 10px; }
+.experience, .expect {padding: 10px; }
+.experience h2, .expect h2 {font-size: 20px; margin-bottom: 20px; }
+.experience p, .expect p {text-indent: 2em; line-height: 22px; }
+
+
+/* 作品 */
+
+#works .content {padding-top: 30px; }
+
+#works-list-title {padding: 0 0 15px 10px; }
+.works-list {width: 675px; height: 445px; margin-right: 20px; overflow-y: scroll; }
+.work {width: 610px; margin-bottom: 30px; overflow: hidden; zoom: 1; }
+.work-info {float: left; width: 350px; margin-right: 20px; /* For IE6 double margin bug */ display: inline; }
+.work-img {float: left; }
+.work img {width: 230px; border: 5px solid #e2e1e0; }
+.work-info h3 {padding: 0 10px 10px; font-size: 20px; }
+.work-info p {padding: 0 10px; font-size: 13px; line-height: 200%; }
+
+/* 联系 */
+
+.contact-me {margin-bottom: 25px; }
+.contact-me h2 {font-size: 20px; padding: 10px; }
+.contact-me span {padding: 5px 0 10px 10px; font-size: 16px; }
+.contact-me span a {padding: 1px; border-bottom: 1px dashed #FFF; }
