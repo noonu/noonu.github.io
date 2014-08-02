@@ -1,0 +1,330 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Microsoft Yahei', Tahoma, Arial, Helvetica, STHeiti;
+    background: #011a15 url(../images/bg.jpg) repeat-x;
+}
+
+li {
+    list-style: none;
+}
+
+#header {
+    width: 840px;
+    height: 100px;
+    margin: 20px auto;
+    background: url(../images/logo.png) no-repeat;
+}
+
+#header h1 {
+    text-indent: -9999px;
+}
+
+#header h1 a {
+    display: block;
+    width: 300px;
+    height: 60px;
+}
+
+#nav {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.5);
+    filter: alpha(opacity=0.5);
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    display: block;
+    width: 60px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    text-decoration: underline;
+}
+
+.select {
+    background-color: #F22;
+}
+
+#main {
+    width: 800px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: 1px solid #222;
+    box-shadow: 0 0 6px #AAA;
+    z-index: 2;
+}
+
+#introduction {
+    border: 1px dashed #BBB;
+    border-radius: 8px;
+}
+
+.tips {
+    margin: 4px 5px;
+    padding: 8px;
+    background: #EEF7F5;
+    color: #000;
+    border-radius: 3px;
+    border: 1px solid #D7EAE2;
+}
+
+#about {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+dt {
+    font-size: 20px;
+    border-bottom: 1px dashed #CCC;
+    margin: 16px 0;
+    color: #89A;
+}
+
+dd {
+    font-size: 14px;
+}
+
+#demos {
+    margin-top: 30px;
+    border: 1px dashed #BBB;
+    border-radius: 8px;
+}
+
+.ps {
+    text-align: center;
+    color: #3AA;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.title {
+    color: #5DD;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.wrap {
+    margin: 50px auto;
+}
+
+.item1 {
+    background: red;
+}
+
+.item2 {
+    background: #FA0;
+}
+
+.item3 {
+    background: #FF0;
+}
+
+.item4 {
+    background: green;
+}
+
+.item5 {
+    background: #0FF;
+}
+
+.item6 {
+    background: #00F;
+}
+
+.item7 {
+    background: #F0F;
+}
+
+#one,#two,#three,#four {
+    border: 10px solid #333;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px #222;
+}
+
+#two h2,#three h2,#four h2 {
+    background: url(../images/bg_noise.png) repeat;
+}
+
+#one div img {
+    width: 560px;
+    height: 300px;
+}
+
+#two {
+    background: #333;
+    border-width: 12px;
+    border-image: url(../images/bg_stitch.png) 9 repeat;
+}
+
+#two h2 span {
+    position: absolute;
+    display: inline-block;
+    width: 350px;
+    top: 160px;
+    left: -160px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-shadow: 1px 1px 0 #666;
+    -webkit-border-image: url(../images/bg_stitch.png) 9 repeat;
+    border: 9px solid transparent;
+}
+
+#two div img {
+    width: 480px;
+    height: 250px;
+}
+
+#three {
+    border-color: #9AA;
+}
+
+#three .info {
+    position: absolute;
+    right: 30px;
+    top: -100px;
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFF;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#control {
+    margin: 10px auto;
+    padding: 6px;
+    width: 600px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#control span {
+    display: block;
+    float: left;
+    width: 80px;
+    height: 30px;
+    margin: 0 30px;
+    background-color: #DEE;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#control span:hover {
+    background-color: #4AA;
+}
+
+#footer {
+    position: relative;
+    height: 210px;
+    background: url(../images/bottom.jpg) repeat-x;
+}
+
+#footer p {
+    position: absolute;
+    bottom: 16px;
+    left: 20px;
+    color: #BBB;
+}
+
+#footer .footer-author {
+    margin-left: 8px;
+}
+
+/*doc页面*/
+.doc-title,.down-title {
+    margin: 20px 0 10px;
+    height: 40px;
+    color: #FFF;
+    background-color: #131;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#options-title {
+    margin-top: 0;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead,thead th {
+    background-color: #D0DBEE;
+    border: 1px solid #AAA;
+}
+
+tr {
+    height: 24px;
+    text-indent: 4px;
+}
+
+.odd {
+    background-color: #E0E8F5;
+}
+
+td {
+    text-align: left;
+    border: 1px solid #AAF;
+    color: #557;
+}
+
+tbody th {
+    text-align: left;
+    color: #214FA3;
+    border: 1px solid #AAF;
+}
+
+#detail {
+    border: 1px dashed #888;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 6px 20px;
+}
+
+.down-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #EEF4F4;
+    text-align: center;
+    border-radius: 4px;
+}

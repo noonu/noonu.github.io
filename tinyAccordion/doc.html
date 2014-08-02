@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="keywords" content="plugin,javascript,accordion,jQuery">
+		<meta name="description" content="tinyAccordion是一个精巧的web界面组件，压缩后只有3KB，实用方便。">
+		<title>
+			tinyAccordion - 一款精巧的jQuery手风琴插件
+		</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if IE 6]>
+			<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js">
+																					
+			</script>
+			<script type="text/javascript">
+				DD_belatedPNG.fix('*');
+			</script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="header">
+			<h1 id="logo">
+				<a href="index.html">tinyAccordion</a>
+			</h1>
+			<ul id="nav" class="nav">
+				<li>
+					<a href="index.html" class="home">首页</a>
+				</li>
+				<li>
+					<a href="API.html" class="api select">文档</a>
+				</li>
+				<li>
+					<a href="down.html"	 class="down">下载</a>
+				</li>
+				<li>
+					<a href="http://wangyuanguilin.gotoip1.com/resume/index.html">关于我</a>
+				</li>
+			</ul>
+		</div>
+		<div id="main">
+			<h2 id="options-title" class="doc-title">
+				配置参数
+			</h2>
+			<table>
+				<thead>
+					<tr>
+						<th class="parameter">
+							名称
+						</th>
+						<th class="type">
+							类型
+						</th>
+						<th class="default">
+							默认值
+						</th>
+						<th class="note">
+							描述
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							width
+						</th>
+						<td>
+							Number
+						</td>
+						<td>
+							800
+						</td>
+						<td>
+							整体宽度
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							height
+						</th>
+						<td>
+							Number
+						</td>
+						<td>
+							400
+						</td>
+						<td>
+							整体高度
+						</td>
+					</tr>
+					<tr>
+						<th>
+							barWidth
+						</th>
+						<td>
+							Number
+						</td>
+						<td>
+							30
+						</td>
+						<td>
+							控制条宽度
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							showInBar
+						</th>
+						<td>
+							Boolean
+						</td>
+						<td>
+							false
+						</td>
+						<td>
+							控制条是否也显示内容区左边部分内容
+						</td>
+					</tr>
+					<tr>
+						<th>
+							initialActiveItem
+						</th>
+						<td>
+							Number
+						</td>
+						<td>
+							0
+						</td>
+						<td>
+							初始时显示项(编号是从零计数的)
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							speed
+						</th>
+						<td>
+							Number
+						</td>
+						<td>
+							500
+						</td>
+						<td>
+							滑动速度（滑动的时间ms）
+						</td>
+					</tr>
+					<tr>
+						<th>
+							easing
+						</th>
+						<td>
+							String
+						</td>
+						<td>
+							'swing'
+						</td>
+						<td>
+							滑动的效果
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							onTriggerAnimate
+						</th>
+						<td>
+							Function
+						</td>
+						<td>
+							Null
+						</td>
+						<td>
+							滑动开始时调用的函数
+						</td>
+					</tr>
+					<tr>
+						<th>
+							onAnimateComplete
+						</th>
+						<td>
+							Function
+						</td>
+						<td>
+							Null
+						</td>
+						<td>
+							滑动结束时调用的函数
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							autoPlay
+						</th>
+						<td>
+							Boolean
+						</td>
+						<td>
+							false
+						</td>
+						<td>
+							是否自动播放
+						</td>
+					</tr>
+					<tr>
+						<th>
+							pauseOnHover
+						</th>
+						<td>
+							Boolean
+						</td>
+						<td>
+							true
+						</td>
+						<td>
+							鼠标hover的时候是否暂停
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							playInterval
+						</th>
+						<td>
+							Number
+						</td>
+						<td>
+							800
+						</td>
+						<td>
+							自动播放的时间间隔
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 class="doc-title">
+				扩展方法
+			</h2>
+			<table>
+				<thead>
+					<tr>
+						<th class="name">
+							名称
+						</th>
+						<th class="note" colspan="3">
+							描述
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							start()
+						</th>
+						<td colspan="3">
+							启动播放
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							stop()
+						</th>
+						<td colspan="3">
+							停止播放
+						</td>
+					</tr>
+					<tr>
+						<th>
+							start()
+						</th>
+						<td colspan="3">
+							启动播放
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							next()
+						</th>
+						<td colspan="3">
+							播放到下一项
+						</td>
+					</tr>
+					<tr>
+						<th>
+							prev()
+						</th>
+						<td colspan="3">
+							播放到前一项
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							activeItem(number)
+						</th>
+						<td colspan="3">
+							播放到指定项(编号是从零计数的)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 class="doc-title">
+				扩展属性
+			</h2>
+			<table>
+				<thead>
+					<tr>
+						<th class="name">
+							名称
+						</th>
+						<th class="note" colspan="3">
+							描述
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							itemToShow
+						</th>
+						<td colspan="3">
+							代表即将要显示的项(一个li,纯粹的DOM对象，不是jQuery实例对象)
+						</td>
+					</tr>
+					<tr class="odd">
+						<th>
+							itemToHide
+						</th>
+						<td colspan="3">
+							代表即将被隐藏的项(一个li,纯粹的DOM对象，不是jQuery实例对象)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<h2 class="doc-title" id="detail-title">
+				详细使用说明
+			</h2>
+			<dl id="detail">
+
+				<dt class="sub-title">
+					调用方法
+				</dt>
+				<dd>
+					$("#accordion-wrap").tinyAccordion({...}); <br>
+					将手风琴的容器div获取为一个jQuery对象，然后调用tinyAccordion()方法即可，通常需要向tinyAccordion方法传递一个对象作为参数。（请参考参数说明）
+				</dd>
+				<dt class="sub-title">
+					html结构要求
+				</dt>
+				<dd>
+					<pre>
+&lt;div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;h2&gt;&lt;/h2&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;h2&gt;&lt;/h2&gt;
+      &lt;div&gt;&lt;/div&gt;
+    &lt;/li&gt;
+    ...... ......
+  &lt;/ul&gt;
+&lt;/div&gt;
+					</pre>
+					</dd>
+					<dd>
+					解释：最外层div是手风琴的整体，对其id和class没有要求，方 便获取就好了。里面是一个ul，li就是各个子项，你可以按自己 需求放置制任意项数，子项里面的h2为左边的控制条，后面的div为内容块，可以自己安排放置你想放的任意内容
+					</dd>
+				<dt class="sub-title">
+					CSS要求
+				</dt>
+				<dd>
+					CSS没有要求，当然你也可以自己定义样式，特别是定义内容div
+				</dd>
+				<dt class="sub-title">
+					调用参数说明
+				</dt>
+				<dd>
+					可以传入一个对象作为参数，可以不设参数对象的某个属性， 不设的话将使用默认值!
+				</dd>
+				<dt class="sub-title">
+					接口方法调用方式
+				</dt>
+				<dd>
+				为了方便插件使用者通过其他代码来控制手风琴，如通过点击某个按钮停止 /启动循环播放、播放下一项/上一项，可以在手风琴对象上调用如下方法，调用方式类似于：<br>
+				var $accordion = $("#accordion-wrap").tinyAccordion({...});<br>
+				 $("#button").click(function()
+				{ $accordion.next(); });
+			</dd>
+				<dt class="sub-title">
+					其他说明
+				</dt>
+				<dd>
+					1、滑动的触发方式，默认是click，可以设置为mouseover。<br>
+					2、滑动效果：由于jquery默认可用的只有linear和swing，如果你想实现 其他效果，请下载其他easing，如jqueryUI里面有提供。<br>
+					3、两个回调函数的执行环境(即里面的this指向)被设为包裹手风琴整体的div，如此可以方便的控制手风琴。<br>
+					4、如果希望取得itemToShow(即将显示出来的项)或itemToHide(原来显示,但即将被遮挡的项)，可以在手风琴上以属性的方式来访问。比如在上面说 的两个回调中，通过this.itemToSow、this.itemToHide就可以访问了。
+					(注意：它们是纯粹的DOM对象，不是jQuery实例对象)
+				</dd>
+			</dl>
+		</div>
+		<footer id="footer">
+			<p>
+				<span>
+					2012-2013
+				</span>
+				<span class="footer-author">
+					Design By
+					<span>
+						wangyuan
+					</span>
+				</span>
+			</p>
+		</footer>
+	</body>
+	</html>
